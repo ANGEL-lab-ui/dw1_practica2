@@ -17,4 +17,12 @@ function decrementar() {
   valor--;
   // Actualizamos el contenido del elemento con el nuevo valor
   document.getElementById('contador').textContent = valor;
+  if (valor < 0) {
+    alert("El contador no puede ser menor que 0");
+    document.getElementById('contador').textContent = 0;
+  }
 }
+function reiniciar() {
+  // Reiniciamos el contador a 0
+  document.getElementById('contador').textContent = 0;
+} 
